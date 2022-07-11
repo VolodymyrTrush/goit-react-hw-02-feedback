@@ -18,7 +18,6 @@ class App extends Component {
     this.setState(prevState => ({ [label]: (prevState[label] += 1) }));
   };
 
-  
   countTotalFeedback = () => {
     const total = Object.keys(this.state).reduce(
       (acc, value) => acc + this.state[value],
